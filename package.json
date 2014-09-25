@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lynnaloo/xtuple-react-components.git"
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/lynnaloo/xtuple-react-components/issues"
   },
-  "homepage": "https://github.com/lynnaloo/xtuple-react-components"
+  "homepage": "https://github.com/lynnaloo/xtuple-react-components",
+  "peerDependencies": {
+    "react": "^0.11.1",
+    "backbone": "1.1.2"
+  }
 }
