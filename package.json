@@ -1,0 +1,36 @@
+{
+  "name": "xtuple-react-components",
+  "version": "0.0.1",
+  "description": "Reusable React.js Mixins and Components",
+  "scripts": {
+    "test": "jest",
+    "build": "jsx jsx/ react-components/",
+    "postinstall": "jsx jsx/ react-components/"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xtuple/xtuple-react-components.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "xTuple",
+  "license": "CPAL",
+  "bugs": {
+    "url": "https://github.com/xtuple/xtuple-react-components/issues"
+  },
+  "homepage": "https://github.com/xtuple/xtuple-react-components",
+  "peerDependencies": {
+    "backbone": "1.1.2"
+  },
+  "dependencies": {
+    "react": "^0.11.1",
+    "jest": "^0.1.37",
+    "react-tools": "^0.11.2"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.1.18"
+  }
+}
