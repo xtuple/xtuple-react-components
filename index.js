@@ -1,9 +1,10 @@
+
 module.exports = {
   // Components
-  ActionButtons: require("./components/ActionButtons"),
-  Table: require("./components/Table"),
-  TableHeader: require("./components/TableHeader"),
-  TableItem: require("./components/TableItem"),
+  ActionButtons: require("./react-components/ActionButtons"),
+  Table: require("./react-components/Table"),
+  TableHeader: require("./react-components/TableHeader"),
+  TableItem: require("./react-components/TableItem"),
 
   // Mixins
   TableMixin: require("./mixins/TableMixin")

@@ -4,7 +4,7 @@
   'use strict';
 
   var React = require('react'),
-    ActionButtons = require('./ActionButtons.jsx');
+    ActionButtons = require('./ActionButtons');
 
   var TableItem = React.createClass({
 

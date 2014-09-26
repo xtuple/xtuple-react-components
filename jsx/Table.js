@@ -5,8 +5,8 @@
 
 	var React = require('react'),
 		Backbone = require('backbone'),
-		TableHeader = require('./TableHeader.jsx'),
-		TableItem = require('./TableItem.jsx'),
+		TableHeader = require('./TableHeader'),
+		TableItem = require('./TableItem'),
 		TableMixin = require('../mixins/TableMixin');
 
 	var Table = React.createClass({

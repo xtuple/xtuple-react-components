@@ -4,8 +4,8 @@
   "description": "Reusable React.js Mixins and Components",
   "scripts": {
     "test": "jest",
-    "build": "jsx -x jsx jsx/ react-components/",
-    "postinstall": "jsx -x jsx jsx/ react-components/"
+    "build": "jsx jsx/ react-components/",
+    "postinstall": "jsx jsx/ react-components/"
   },
   "main": "index.js",
   "repository": {
