@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Reusable React.js Mixins and Components",
   "scripts": {
-    "test": "jest",
+    "test": "mocha",
     "build": "jsx jsx/ react-components/",
     "postinstall": "jsx jsx/ react-components/"
   },
@@ -26,11 +26,9 @@
     "backbone": "1.1.2"
   },
   "dependencies": {
+    "mocha": "^1.21.4",
     "react": "^0.11.1",
-    "jest": "^0.1.37",
     "react-tools": "^0.11.2"
   },
-  "devDependencies": {
-    "jest-cli": "^0.1.18"
-  }
+  "devDependencies": {}
 }
