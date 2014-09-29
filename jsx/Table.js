@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 
 (function () {
+
 	'use strict';
 
 	var React = require('react'),
@@ -31,11 +32,11 @@
 					<div className="panel panel-default">
 						<div className="panel-heading">{this.props.title}</div>
 						<div className="table-responsive">
-							<table className="table table-striped table-bordered table-hover" >
+							<table className="table table-striped table-bordered table-hover">
 								<TableHeader cols={this.props.cols}/>
 								<tbody>
 									{tableRows}
-								</tbody>
+									</tbody>
 							</table>
 						</div>
 					</div>
