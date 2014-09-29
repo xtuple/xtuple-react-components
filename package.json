@@ -22,9 +22,6 @@
     "url": "https://github.com/xtuple/xtuple-react-components/issues"
   },
   "homepage": "https://github.com/xtuple/xtuple-react-components",
-  "peerDependencies": {
-    "backbone": "1.1.2"
-  },
   "dependencies": {
     "mocha": "^1.21.4",
     "react": "^0.11.1",
