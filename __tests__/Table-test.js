@@ -21,8 +21,10 @@ describe('Table Component Test', function (){
       defaultPoll = 1000,
       defaultColsArray = [];
 
+    console.log(table.props);
+
     expect(table.props.title).toBe(defaultTitle);
     expect(table.props.pollInterval).toBe(defaultPoll);
-    expect(table.proprs.cols).toBe([]);
+    expect(table.props.cols).toBe(defaultColsArray);
   });
 });
