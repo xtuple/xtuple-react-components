@@ -18,13 +18,10 @@ describe('Table Component Test', function (){
 
   it('Ensure default properties', function () {
     var defaultTitle = 'Default Title',
-      defaultPoll = 1000,
-      defaultColsArray = [];
+  defaultPoll = 1000;
 
-    console.log(table.props);
-
-    expect(table.props.title).toBe(defaultTitle);
-    expect(table.props.pollInterval).toBe(defaultPoll);
-    expect(table.props.cols).toBe(defaultColsArray);
+    expect(table.props.title).toEqual(defaultTitle);
+    expect(table.props.pollInterval).toEqual(defaultPoll);
+    expect(table.props.cols).not.toBe(null);
   });
 });
