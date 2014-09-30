@@ -4,13 +4,6 @@
 
   var TableMixin = {
     /*
-      Set default value of the model array and message.
-    */
-    getInitialState: function () {
-      return {data : [], message : ''};
-    },
-
-    /*
       Fetch the models for the model collection.
     */
     getModels: function () {

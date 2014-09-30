@@ -4,14 +4,24 @@
 
   'use strict';
 
-  var React = require('react'),
-    Backbone = require('backbone'),
+  var React = require('react/addons'),
     TableHeader = require('./TableHeader'),
     TableItem = require('./TableItem'),
     TableMixin = require('../mixins/TableMixin');
 
   var Table = React.createClass({
     mixins: [TableMixin], // Mixin common table logic
+
+    getDefaultProps: function() {
+      return {
+        title: 'Default Title',
+        pollInterval: 1000
+      };
+    },
+
+    getInitialState: function () {
+      return {data : [], message : ''};
+    },
 
     render: function () {
       var models = this.state.data,
