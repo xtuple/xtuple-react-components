@@ -15,7 +15,8 @@
     getDefaultProps: function() {
       return {
         title: 'Default Title',
-        pollInterval: 1000
+        pollInterval: 1000,
+        cols: []
       };
     },
 
