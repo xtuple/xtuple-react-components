@@ -1,7 +1,4 @@
 /** @jsx React.DOM */
-
-(function () {
-
   'use strict';
 
   var React = require('react/addons'),
@@ -15,11 +12,21 @@
   var Table = React.createClass({
     mixins: [TableMixin], // Mixin common table logic
 
+    /*
+      Validation to ensure that the properties sent from the
+        parent component is the correct type.
+    */
+    propTypes: {
+      cols: React.PropTypes.array,
+      pollInterval: React.PropTypes.number,
+      title: React.PropTypes.string
+    },
+
     getDefaultProps: function() {
       return {
         title: defaultTitle,
         pollInterval: defaultPoll,
-        cols: defaultCols
+        cols: defaultCols,
       };
     },
 
@@ -64,5 +71,3 @@
   module.exports.defaultPoll = defaultPoll;
   module.exports.defaultTitle = defaultTitle;
   module.exports.defaultCols = defaultCols;
-
-}());
