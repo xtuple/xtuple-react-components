@@ -6,22 +6,21 @@ jest.dontMock('../react-components/Table.js');
 */
 describe('Table Component Test', function (){
   var React = require('react/addons'),
-    Table = require('../react-components/Table.js'),
+    Table = require('../react-components/Table'),
     TestUtils = require('react-test-utils'),
     table;
-  /* Render a table with default props */
-  it('Ensure component can be rendered', function () {
-    // TODO: use jsx and test preprocessor
+
+  describe('Test rendering of Table Components', function () {
     table = TestUtils.renderIntoDocument(Table(null));
-    expect(table).toBeDefined();
-  });
 
-  it('Ensure default properties', function () {
-    var defaultTitle = 'Default Title',
-  defaultPoll = 1000;
+    it('Ensure component can be rendered', function () {
+      expect(table).toBeDefined();
+    });
 
-    expect(table.props.title).toEqual(defaultTitle);
-    expect(table.props.pollInterval).toEqual(defaultPoll);
-    expect(table.props.cols).not.toBe(null);
+    it('Ensure default properties', function () {
+      expect(table.props.title).toBe(Table.defaultTitle);
+      expect(table.props.pollInterval).toBe(Table.defaultPoll);
+      expect(table.props.cols).toBe(Table.defaultCols);
+    });
   });
 });

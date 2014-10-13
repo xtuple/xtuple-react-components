@@ -9,9 +9,24 @@
 
   var TableItem = React.createClass({
 
+    /*
+      Validation to ensure that the properties sent from the
+        parent component is the correct type.
+    */
+    propTypes: {
+      data: React.PropTypes.object
+    },
+
+    getDefaultProps: function () {
+      return {
+        data: {}
+      };
+    },
+
     render: function() {
       var item = this.props.data,
-        attributes = this.props.attrs.map(function (col) {
+        attrs = this.props.attrs || [],
+        attributes = attrs.map(function (col) {
           return (
             <td className="col-md-1">{item.get(col)}</td>
           );

@@ -8,6 +8,20 @@
 
   var TableHeader = React.createClass({
 
+    /*
+      Validation to ensure that the properties sent from the
+        parent component is the correct type.
+    */
+    propTypes: {
+      data: React.PropTypes.array
+    },
+
+    getDefaultProps: function () {
+      return {
+        cols: []
+      };
+    },
+
     render: function () {
       var header = this.props.cols.map(function (col) {
           return (

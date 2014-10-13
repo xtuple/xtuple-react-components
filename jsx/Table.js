@@ -7,16 +7,19 @@
   var React = require('react/addons'),
     TableHeader = require('./TableHeader'),
     TableItem = require('./TableItem'),
-    TableMixin = require('../mixins/TableMixin');
+    TableMixin = require('../mixins/TableMixin'),
+    defaultPoll = 1000,
+    defaultTitle = 'Default Title',
+    defaultCols = [];
 
   var Table = React.createClass({
     mixins: [TableMixin], // Mixin common table logic
 
     getDefaultProps: function() {
       return {
-        title: 'Default Title',
-        pollInterval: 1000,
-        cols: []
+        title: defaultTitle,
+        pollInterval: defaultPoll,
+        cols: defaultCols
       };
     },
 
@@ -58,5 +61,8 @@
   });
 
   module.exports = Table;
+  module.exports.defaultPoll = defaultPoll;
+  module.exports.defaultTitle = defaultTitle;
+  module.exports.defaultCols = defaultCols;
 
 }());
