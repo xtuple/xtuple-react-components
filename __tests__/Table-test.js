@@ -27,15 +27,15 @@ describe('Table component test', function (){
   describe('Test validation of properties', function () {
     table = TestUtils.renderIntoDocument(Table(null));
 
-    it('Ensure Collection is an object', function () {
+    xit('Ensure Collection is an object', function () {
       // TODO
     });
 
-    it('Ensure Poll Interval is a number', function () {
+    xit('Ensure Poll Interval is a number', function () {
       // TODO
     });
 
-    it('Ensure Title is a String', function () {
+    xit('Ensure Title is a String', function () {
       // TODO
     });
   });
