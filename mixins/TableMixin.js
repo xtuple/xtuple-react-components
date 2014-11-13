@@ -14,7 +14,7 @@
 
         error: function (err) {
           self.setState({
-            message: err.responseText + ' ' + err.statusText
+            message: 'Error: ' + err
           });
         }
       });
@@ -33,7 +33,7 @@
 
         error: function (err) {
           self.setState({
-            message: err.responseText + ' ' + err.statusText
+            message: 'Error: ' + err
           });
         }
       });
