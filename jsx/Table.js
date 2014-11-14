@@ -63,7 +63,7 @@
               </table>
             </div>
           </div>
-          <div><strong>{this.state.message}</strong></div>
+          <div className="alert alert-danger" role="alert">{this.state.message}</div>
         </div>
       );
     }
