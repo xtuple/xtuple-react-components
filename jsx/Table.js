@@ -19,14 +19,15 @@
     propTypes: {
       cols: React.PropTypes.array,
       pollInterval: React.PropTypes.number,
-      title: React.PropTypes.string
+      title: React.PropTypes.string,
+      headers: React.PropTypes.array
     },
 
     getDefaultProps: function() {
       return {
         title: defaultTitle,
         pollInterval: defaultPoll,
-        cols: defaultCols,
+        cols: defaultCols
       };
     },
 
@@ -36,10 +37,11 @@
 
     render: function () {
       var models = this.state.data,
-        tableRows = models.map(function (model) {
+        headers = this.props.headers || this.props.cols,
+        tableRows = models.map(function (model, i) {
           return (
             <TableItem
-              key={model.get('number')}
+              key={i}
               data={model}
               attrs={this.props.cols}
               onDelete={this.deleteModel.bind(this, model)}
@@ -54,14 +56,14 @@
             <div className="panel-heading">{this.props.title}</div>
             <div className="table-responsive">
               <table className="table table-striped table-bordered table-hover">
-                <TableHeader cols={this.props.cols}/>
+                <TableHeader cols={headers}/>
                 <tbody>
                   {tableRows}
                   </tbody>
               </table>
             </div>
           </div>
-          <div><strong>{this.state.message}</strong></div>
+          <div className="alert alert-danger" role="alert">{this.state.message}</div>
         </div>
       );
     }

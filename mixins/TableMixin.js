@@ -12,9 +12,10 @@
           self.setState({data: models, message: ''});
         },
 
-        error: function (err) {
+        error: function (collection, response) {
+          console.log(response.statusText);
           self.setState({
-            message: err.responseText + ' ' + err.statusText
+            message: 'Error fetching data from the server'
           });
         }
       });
@@ -31,9 +32,10 @@
           self.setState({data: this.state.data, message: ''});
         },
 
-        error: function (err) {
+        error: function (collection, response) {
+          console.log(response.statusText);
           self.setState({
-            message: err.responseText + ' ' + err.statusText
+            message: 'Error deleting record'
           });
         }
       });

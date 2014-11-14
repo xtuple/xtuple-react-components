@@ -1,6 +1,6 @@
 {
   "name": "xtuple-react-components",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Reusable React.js Mixins and Components",
   "scripts": {
     "test": "./node_modules/.bin/jest",

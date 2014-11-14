@@ -23,9 +23,9 @@
     render: function() {
       var item = this.props.data,
         attrs = this.props.attrs || [],
-        attributes = attrs.map(function (col) {
+        attributes = attrs.map(function (col, i) {
           return (
-            <td className="col-md-1">{item.get(col)}</td>
+            <td key={i} className="col-md-1">{item.get(col)}</td>
           );
         }, this);
 
