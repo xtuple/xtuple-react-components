@@ -21,9 +21,9 @@
     },
 
     render: function () {
-      var header = this.props.cols.map(function (col) {
+      var header = this.props.cols.map(function (col, i) {
           return (
-            <th className="col-md-1">{col}</th>
+            <th key={i} className="col-md-1">{col}</th>
           );
         }, this);
 
