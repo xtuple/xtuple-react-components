@@ -11,7 +11,7 @@
         parent component is the correct type.
     */
     propTypes: {
-      data: React.PropTypes.array
+      cols: React.PropTypes.array
     },
 
     getDefaultProps: function () {

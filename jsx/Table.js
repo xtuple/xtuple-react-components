@@ -55,7 +55,7 @@
             <div className="panel-heading">{this.props.title}</div>
             <div className="table-responsive">
               <table className="table table-striped table-bordered table-hover">
-                <TableHeader cols={this.props.headers || this.props.headers}/>
+                <TableHeader cols={this.props.headers || this.props.cols}/>
                 <tbody>
                   {tableRows}
                   </tbody>
