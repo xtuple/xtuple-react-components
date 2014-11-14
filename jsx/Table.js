@@ -37,6 +37,7 @@
 
     render: function () {
       var models = this.state.data,
+        headers = this.props.headers || this.props.cols,
         tableRows = models.map(function (model, i) {
           return (
             <TableItem
@@ -55,7 +56,7 @@
             <div className="panel-heading">{this.props.title}</div>
             <div className="table-responsive">
               <table className="table table-striped table-bordered table-hover">
-                <TableHeader cols={this.props.headers || this.props.cols}/>
+                <TableHeader cols={headers}/>
                 <tbody>
                   {tableRows}
                   </tbody>
